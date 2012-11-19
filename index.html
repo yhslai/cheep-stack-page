@@ -2,6 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta property="og:title" content="Cheep Stack" />
+    <meta property="og:type" content="game" />
+    <meta property="og:url" content="http://raincole.github.com/cheep-stack/" />
+    <meta property="og:image" content="http://raincole.github.com/cheep-stack/img/og-image.png" />
+    <meta property="og:site_name" content="Cheep Stack" />
+    <meta property="fb:admins" content="100000353465634" />
+
 		<title>Unity Web Player | piyomori-csie</title>
 		<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
 		<script type="text/javascript">
@@ -23,6 +31,7 @@
 		body {
 			font-family: Helvetica, Verdana, Arial, sans-serif;
 			background-color: white;
+      background-image: url(img/background.png);
 			color: black;
 			text-align: center;
 		}
@@ -70,7 +79,7 @@
     table.manual td {
       padding: 5px 15px;
       font-size: 20px;
-      border: 1px solid #DDDDDD;
+      border: 1px solid #CCC;
     }
     table.manual td.description {
       font-size: 16px;
@@ -79,7 +88,19 @@
 		</style>
 	</head>
 	<body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=259132297543094";
+                fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 		<p class="header"><span>資訊雞疊疊樂</span></p>
+    <div class="fb-like" data-href="http://raincole.github.com/piyomori-csie/" data-send="true" data-width="280" data-show-faces="true"></div>
 		<div class="content">
 			<div id="unityPlayer">
 				<div class="missing">

@@ -33,13 +33,11 @@
 			color: #666;
 		}
 		p.header {
-			font-size: small;
-		}
-		p.header span {
+      font-size: 24px;
 			font-weight: bold;
 		}
 		p.footer {
-			font-size: x-small;
+			font-size: 14px;
 		}
 		div.content {
 			margin: auto;
@@ -64,11 +62,23 @@
 			height: 600px;
 			width: 480px;
 		}
+    table.manual {
+      margin: auto;
+      border-collapse: collapse;
+    }
+    table.manual td {
+      padding: 5px 15px;
+      font-size: 20px;
+      border: 1px solid #DDDDDD;
+    }
+    table.manual td.description {
+      font-size: 16px;
+    }
 		-->
 		</style>
 	</head>
 	<body>
-		<p class="header"><span>Unity Web Player | </span>piyomori-csie</p>
+		<p class="header"><span>資訊雞疊疊樂</span></p>
 		<div class="content">
 			<div id="unityPlayer">
 				<div class="missing">
@@ -78,6 +88,14 @@
 				</div>
 			</div>
 		</div>
-		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+    <p>
+      <table class="manual">
+        <tr><td>LeftClick</td><td class="description">shoot</td></tr>
+        <tr><td>A, D</td><td class="description">move (horizontal)</td></tr>
+        <tr><td>W, S</td><td class="description">move (vertical)</td></tr>
+        <tr><td>Q, R</td><td class="description">rotate</td><tr>
+      </table>
+    </p>
+    <p class="footer">&laquo; Created by <a href="raintomorrow.cc" title="Raincole">Raincole</a>, Inspired by <a href="http://www.piyomori.com/" title="Piyomori">Piyomori</a>, Powered by <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
 	</body>
 </html>

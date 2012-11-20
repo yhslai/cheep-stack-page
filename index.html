@@ -12,6 +12,7 @@
     <meta property="fb:admins" content="100000353465634" />
 
     <link rel="canonical" href="http://raintomorrow.cc/games/cheep-stack"/>
+    <link rel="shortcut icon" href="http://raincole.github.com/cheep-stack/favicon.ico"/>
 
 		<title>資訊雞疊疊樂 | 台大資訊週</title>
 
@@ -43,8 +44,14 @@
       var h = document.getElementsByTagName("header")[0];
       var p = h.getElementsByTagName("p")[0];
       var span = h.getElementsByTagName("span")[0];
-      p.innerText = "吱吱喳喳 - 台大資訊週";
+      var link = document.createElement('a');
+      link.href = "https://www.facebook.com/csiezhou2012";
+      link.target = "_blank";
+      link.innerText = "吱吱喳喳 - 台大資訊週";
+      
       span.innerText = "就在本週，小福廣場與你相見";
+      p.innerText = "";
+      p.appendChild(link);
       p.style.margin = "15px 0 0";
     }
 
@@ -52,8 +59,8 @@
       var h = document.getElementsByTagName("header")[0];
       var p = h.getElementsByTagName("p")[0];
       var span = h.getElementsByTagName("span")[0];
-      p.innerText = "資 訊 雞 疊 疊 樂";
       span.innerText = "";
+      p.innerText = "資 訊 雞 疊 疊 樂";
       p.style.margin = "37.5px 0";
     }
 

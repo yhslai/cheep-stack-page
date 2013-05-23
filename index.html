@@ -6,19 +6,19 @@
     <meta property="og:title" content="Cheep Stack" />
     <meta property="og:type" content="game" />
     <meta property="og:url" content="http://raintomorrow.cc/games/cheep-stack" />
-    <meta property="og:image" content="http://raincole.github.com/cheep-stack/img/og-image.png" />
+    <meta property="og:image" content="http://raincole.github.com/cheep-stack-page/img/og-image.png" />
     <meta property="og:site_name" content="Cheep Stack" />
     <meta property="og:description" content="A funny game about piling chicks up! How many can you stack without collasping?" />
     <meta property="fb:admins" content="100000353465634" />
 
     <link rel="canonical" href="http://raintomorrow.cc/games/cheep-stack"/>
-    <link rel="shortcut icon" href="http://raincole.github.com/cheep-stack/favicon.ico"/>
+    <link rel="shortcut icon" href="http://raincole.github.com/cheep-stack-page/favicon.ico"/>
 
 		<title>Cheep Stack</title>
 
     <script type="text/javascript">
       // Redirect Github Page to my own domain
-      if (window.location.href.indexOf('http://raincole.github.com/cheep-stack') === 0) {
+      if (window.location.href.indexOf('http://raincole.github.com/cheep-stack-page') === 0) {
           window.location.href = 'http://raintomorrow.cc/games/cheep-stack';
       }
     </script>
@@ -34,7 +34,7 @@
       if(isDev)
         gameUrl = "cheep-stack.unity3d";
       else
-        gameUrl = "http://raincole.github.com/cheep-stack/cheep-stack.unity3d";
+        gameUrl = "http://raincole.github.com/cheep-stack-page/cheep-stack.unity3d";
 
       var fbId;
       if(isDev)
@@ -64,7 +64,7 @@
             oauth      : true, // enable OAuth 2.0
             xfbml      : true // parse XFBML
           });
-   
+
       };
 
       (function(d, s, id) {
@@ -81,7 +81,7 @@
 		body {
 			font-family: Helvetica, Verdana, Arial, sans-serif;
 			background-color: white;
-      background-image: url(http://raincole.github.com/cheep-stack/img/background.png);
+      background-image: url(http://raincole.github.com/cheep-stack-page/img/background.png);
 			color: black;
 			text-align: center;
 		}
@@ -171,6 +171,11 @@
       </table>
     </p>
     <p class="footer">
+      <div id="twitter-button">
+        <a href="https://twitter.com/raincolee" class="twitter-follow-button" data-show-count="false">Follow @raincolee</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+
       &laquo;
       Created by <a target="_blank" href="http://raintomorrow.cc" title="Raincole">Raincole</a>,
       Inspired by <a target="_blank" href="http://www.piyomori.com/" title="Piyomori">Piyomori</a>,
